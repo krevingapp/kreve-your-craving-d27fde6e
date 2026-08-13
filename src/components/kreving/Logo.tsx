@@ -1,14 +1,14 @@
-import logoAsset from "@/assets/kreving-logo.png.asset.json";
+import logoUrl from "@/assets/kreving-logo.png";
 import { cn } from "@/lib/utils";
 
 /**
- * Brand mark. Swap `src/assets/kreving-logo.png.asset.json` to replace the logo.
+ * Brand mark. Swap `src/assets/kreving-logo.png` to replace the logo.
  */
 export function Logo({ className, compact = false }: { className?: string; compact?: boolean }) {
   return (
     <span className={cn("flex items-center gap-2", className)}>
       <img
-        src={logoAsset.url}
+        src={logoUrl}
         alt="Kreving logo"
         width={40}
         height={40}
